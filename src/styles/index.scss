@@ -1,13 +1,30 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
+.firstSquare {
+    height: 6rem;
+    width: 6rem;
+    background-color: rgb(253, 253, 253);
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    border-radius: 1rem;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+};
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+.gridSquares {
+    display: grid;
+    grid-template-columns: repeat(3, 6rem);
+    grid-template-rows: repeat(3, 6rem);
+    height: 50hv;
+    gap: 0.15rem;
+    place-content: center center;
+}
+.Title, .status {
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 4rem;
+    color: rgb(50, 61, 55)
+}
